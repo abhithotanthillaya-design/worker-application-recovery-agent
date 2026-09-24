@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useRef } from "react";
 import { ArrowDown, FlaskConical } from "lucide-react";
 import ParticleText from "@/components/ui/particle-text";
@@ -89,9 +88,12 @@ export function Hero() {
             approve.
           </p>
           <div data-hero-item className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/start" className="btn btn-primary min-h-12 px-6 text-base">
+            <a
+              href={process.env.NEXT_PUBLIC_DEMO_URL || "http://localhost:5173"}
+              className="btn btn-primary min-h-12 px-6 text-base"
+            >
               Open the demo case
-            </Link>
+            </a>
             <a href="#story" className="btn btn-ghost min-h-12 px-6 text-base">
               See how a case is recovered
               <ArrowDown size={16} aria-hidden />
