@@ -10,6 +10,13 @@ env/
 backend/venv/
 backend/.venv/
 
+# Database & Local Uploads
+*.db
+*.sqlite3
+backend/data/
+uploads/
+backend/uploads/
+
 # Node / Frontend
 node_modules/
 dist/
