@@ -41,3 +41,7 @@ dist-ssr/
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Next.js
+landing/.next/
+
